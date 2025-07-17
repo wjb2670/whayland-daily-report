@@ -1,0 +1,71 @@
+/* Whayland Company Color Scheme */
+/* Apply these color values to replace generic blue (#007bff) with Whayland brand colors */
+
+:root {
+  /* Primary Whayland Brand Colors */
+  --whayland-primary: #262666;
+  --whayland-primary-hover: #1e1f52;
+  --whayland-primary-light: #3d3e7a;
+  
+  /* Secondary Colors */
+  --whayland-secondary: #6c757d;
+  --whayland-success: #28a745;
+  --whayland-warning: #ffc107;
+  --whayland-danger: #dc3545;
+  
+  /* Neutral Colors */
+  --whayland-gray-100: #f8f9fa;
+  --whayland-gray-200: #e9ecef;
+  --whayland-gray-300: #dee2e6;
+  --whayland-gray-400: #ced4da;
+  --whayland-gray-500: #adb5bd;
+  --whayland-gray-600: #6c757d;
+  --whayland-gray-700: #495057;
+  --whayland-gray-800: #343a40;
+  --whayland-gray-900: #212529;
+}
+
+/* Apply Whayland colors to components */
+.welcome-message {
+  color: var(--whayland-primary) !important;
+}
+
+.daily-report-header h2 {
+  color: var(--whayland-primary) !important;
+}
+
+.section-card h3 {
+  color: var(--whayland-primary) !important;
+}
+
+.spinner {
+  border-top-color: var(--whayland-primary) !important;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--whayland-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--whayland-primary) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--whayland-primary-hover) !important;
+}
+
+.btn-add {
+  background-color: var(--whayland-primary) !important;
+}
+
+/* Instructions for manual replacement */
+/*
+To apply Whayland branding, replace these color values in dailyreport.css:
+
+1. Replace #007bff with #262666 (Whayland primary)
+2. Replace #0056b3 with #1e1f52 (Whayland primary hover)
+3. Update welcome message text to include "Whayland" company name
+4. Replace generic logo placeholder with whayland-logo.png
+*/

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Construction Daily Report</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- Microsoft Authentication Library -->
+    <script src="https://alcdn.msauth.net/browser/2.38.3/js/msal-browser.min.js"></script>
+    
+    <!-- SharePoint Framework Libraries -->
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dailyreport.css" />
+    <meta name="theme-color" content="#4a73c9" />
+  </head>
+  <body>
+    <!-- Daily Report App Container -->
+    <div id="dailyReportApp">
+      <div id="loadingSpinner" class="loading">
+        <div class="spinner"></div>
+        <p>Loading Daily Report...</p>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/msal-config.js" type="module"></script>
+    <script src="./js/sharepoint-api.js" type="module"></script>
+    <script src="./js/daily-report.js" type="module"></script>
+  </body>
+</html>

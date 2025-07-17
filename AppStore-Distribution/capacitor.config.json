@@ -1,0 +1,10 @@
+{
+  "appId": "com.whayland.dailyreport",
+  "appName": "Daily Report",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}
