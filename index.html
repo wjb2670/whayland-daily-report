@@ -10,7 +10,11 @@
     />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
-
+if (sessionStorage.redirect) {
+  const redirect = sessionStorage.redirect;
+  delete sessionStorage.redirect;
+  window.history.replaceState(null, null, redirect);
+}
     <!-- PWA & Apple Meta Tags -->
     <link rel="manifest" href="assets/manifest-CD7KRGnL.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
